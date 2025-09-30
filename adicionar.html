@@ -26,9 +26,9 @@
   </head>
 
   <body class="bg-fundo flex justify-center">
-    <div id="geral" class="absolute top-[15%] left-[20%] right-[20%] max-md:top-[5%] max-md:left-[8%] max-md:right-[8%] rounded-2xl bg-geral">
+    <div class="absolute top-[15%] left-[20%] right-[20%] max-md:top-[5%] max-md:left-[8%] max-md:right-[8%] rounded-2xl bg-geral">
       <header>
-        <h1 id="titulo" class="text-texto font-titulo text-[280%] text-center my-2 max-md:text-[230%]">LISTA DE COMPRAS</h1>
+        <h1 class="text-texto font-titulo text-[280%] text-center my-2 max-md:text-[230%]">LISTA DE COMPRAS</h1>
       </header>
 
       <main>
@@ -41,17 +41,18 @@
           <input type="date" id="validade" placeholder="Validade:" class="col-span-1 rounded-xl bg-fundo text-texto font-texto text-[120%] px-2 py-2">
 
           <div id="botoesAdd" class="col-span-3 flex flex-col items-center">
-            <button type="submit" id="adicionar" class="mb-2 rounded-lg bg-fundo text-texto font-texto text-[120%] py-2 px-4">Adicionar</button>
-            <button type="button" id="voltar2" onclick="window.location.href = 'index.html';" class="mt-2 rounded-lg bg-fundo text-texto font-texto text-[120%] py-2 px-4">Voltar</button>
+            <button type="submit" class="mb-2 rounded-lg bg-fundo text-texto font-texto text-[120%] py-2 px-4">Adicionar</button>
+            <button type="button" onclick="window.location.href = 'index.html';" class="mt-2 rounded-lg bg-fundo text-texto font-texto text-[120%] py-2 px-4">Voltar</button>
           </div>
         </form>
       </main>
 
       <footer>
-        <p id="footer" class="text-center text-texto font-texto text-[90%] mb-2">&copy; 2025 - Minha Lista de Compras</p>
+        <p class="text-center text-texto font-texto text-[90%] mb-2">&copy; 2025 - Minha Lista de Compras</p>
       </footer>
     </div>
     <script src="script.js"></script>
   </body>
 </html>
+
 
