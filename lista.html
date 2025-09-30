@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              fundo: "#fce6d9",
+              geral: "#f57c31",
+              texto: "#3d1d08",
+              editar: "#64f586",
+              excluir: "#fa5043"
+            },
+            fontFamily: {
+              titulo: ["'Fascinate Inline'", "system-ui"],
+              texto: ["'Fugaz One'", "sans-serif"],
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fugaz+One&display=swap" rel="stylesheet">
+    <title>Lista de Produtos</title>
+  </head>
+
+  <body class="bg-fundo flex justify-center">
+    <div id="geral" class="absolute top-[15%] left-[20%] right-[20%] max-md:top-[5%] max-md:left-[8%] max-md:right-[8%] rounded-2xl bg-geral">
+      <header>
+        <h1 id="titulo" class="text-texto font-titulo text-[280%] text-center my-2 max-md:text-[230%]">LISTA DE COMPRAS</h1>
+      </header>    
+
+      <main class="p-2">
+        <div class="flex space-x-2 ml-3">
+          <button type="button" id="voltar" onclick="window.location.href = 'Menu.html';" class="mr-3 rounded-lg bg-fundo text-texto font-texto text-[120%] py-2 px-4">Voltar</button>
+          <button type="button" id="limpar" class="rounded-lg bg-fundo text-texto font-texto text-[120%] py-2 px-4">Limpar Lista</button>
+        </div>
+
+        <div class="table-wrapper mx-5 overflow-x-auto">
+          <table id="tabela" class="w-[90%] max-w-[80%] mx-auto mt-5 bg-fundo text-texto font-texto text-[100%] border-gray-300 rounded-lg text-center">
+            <thead>
+              <tr>
+                <th class="p-2 ">Nome</th>
+                <th class="p-2">Quantidade</th>
+                <th class="p-2">Preço</th>
+                <th class="p-2">Categoria</th>
+                <th class="p-2">Lote</th>
+                <th class="p-2">Validade</th>
+                <th class="p-2">Ações</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </main>
+
+      <footer>
+        <p id="footer" class="text-center text-texto font-texto text-[90%] mb-2">&copy; 2025 - Minha Lista de Compras</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

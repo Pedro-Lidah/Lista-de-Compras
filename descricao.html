@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              fundo: "#fce6d9",
+              geral: "#f57c31",
+              texto: "#3d1d08",
+            },
+            fontFamily: {
+              titulo: ["'Fascinate Inline'", "system-ui"],
+              texto: ["'Fugaz One'", "sans-serif"],
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fugaz+One&display=swap" rel="stylesheet">
+    <title>Descrição</title>
+  </head>
+
+  <body class="bg-fundo flex justify-center">
+    <div id="geral" class="absolute top-[15%] left-[20%] right-[20%] max-md:top-[5%] max-md:left-[8%] max-md:right-[8%] rounded-2xl bg-geral">
+      <header>
+        <h1 id="titulo" class="text-texto font-titulo text-[280%] text-center my-2 max-md:text-[230%]">DESCRIÇÃO DO PROJETO</h1>
+      </header>
+
+      <main class="font-texto text-texto">
+        <button type="button" id="voltar" onclick="window.location.href = 'Menu.html';" class="m-2 ml-6 rounded-lg bg-fundo text-texto font-texto text-[120%] py-2 px-4" >Voltar</button>
+        <p id="textDescricao" class="m-2 p-2 rounded-xl bg-fundo text-texto font-texto text-[120%] max-w-[80%] mx-auto border border-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam sunt voluptatibus eligendi possimus tenetur odio magnam facilis, dolore asperiores optio beatae? Odit saepe quis, inventore recusandae dolor voluptatum molestias quas.</p>
+      </main>
+
+      <footer>
+        <p id="footer" class="text-center text-texto font-texto text-[90%] mb-2">&copy; 2025 - Minha Lista de Compras</p>
+      </footer>
+    </div>
+  </body>
+</html>

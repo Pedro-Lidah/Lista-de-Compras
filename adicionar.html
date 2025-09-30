@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              fundo: "#fce6d9",
+              geral: "#f57c31",
+              texto: "#3d1d08",
+            },
+            fontFamily: {
+              titulo: ["'Fascinate Inline'", "system-ui"],
+              texto: ["'Fugaz One'", "sans-serif"],
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fugaz+One&display=swap" rel="stylesheet">
+    <title>Adicionar Produtos</title>
+  </head>
+
+  <body class="bg-fundo flex justify-center">
+    <div id="geral" class="absolute top-[15%] left-[20%] right-[20%] max-md:top-[5%] max-md:left-[8%] max-md:right-[8%] rounded-2xl bg-geral">
+      <header>
+        <h1 id="titulo" class="text-texto font-titulo text-[280%] text-center my-2 max-md:text-[230%]">LISTA DE COMPRAS</h1>
+      </header>
+
+      <main>
+        <form id="formulario" class="grid grid-cols-3 gap-[20px] m-6 max-md:flex max-md:flex-col">
+          <input type="text" id="item" placeholder="Item:" class="col-span-1 rounded-xl bg-fundo text-texto font-texto text-[120%] px-2 py-2">
+          <input type="number" id="quantidade" placeholder="Quantidade" class="col-span-1 rounded-xl bg-fundo text-texto font-texto text-[120%] px-2 py-2">
+          <input type="text" id="preco" placeholder="Preço:" class="col-span-1 rounded-xl bg-fundo text-texto font-texto text-[120%] px-2 py-2">
+          <input type="text" id="categoria" placeholder="Categoria:" class="col-span-1 rounded-xl bg-fundo text-texto font-texto text-[120%] px-2 py-2">
+          <input type="text" id="lote" placeholder="Lote:" class="col-span-1 rounded-xl bg-fundo text-texto font-texto text-[120%] px-2 py-2">
+          <input type="date" id="validade" placeholder="Validade:" class="col-span-1 rounded-xl bg-fundo text-texto font-texto text-[120%] px-2 py-2">
+
+          <div id="botoesAdd" class="col-span-3 flex flex-col items-center">
+            <button type="submit" id="adicionar" class="mb-2 rounded-lg bg-fundo text-texto font-texto text-[120%] py-2 px-4">Adicionar</button>
+            <button type="button" id="voltar2" onclick="window.location.href = 'Menu.html';" class="mt-2 rounded-lg bg-fundo text-texto font-texto text-[120%] py-2 px-4">Voltar</button>
+          </div>
+        </form>
+      </main>
+
+      <footer>
+        <p id="footer" class="text-center text-texto font-texto text-[90%] mb-2">&copy; 2025 - Minha Lista de Compras</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
