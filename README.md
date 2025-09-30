@@ -13,11 +13,11 @@
 
 🖥️ Tecnologias usadas
 
-HTML5
+ - HTML5
 
-Tailwind CSS
+ - Tailwind CSS
 
-JavaScript
+ - JavaScript
 <p align="center">
 <img width="1821" height="848" alt="image" src="https://github.com/user-attachments/assets/70b5d7d8-1991-4c3f-b592-638912154c80"/>
 </p>
